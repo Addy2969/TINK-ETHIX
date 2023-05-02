@@ -8,7 +8,7 @@
 .container{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/background.png);  
+  background-image: linear-gradient(rgba(0,0,0,0.3),transparent);
   background-repeat: no-repeat;
   background-size: 150% 100%;
   background-position: center;
@@ -20,7 +20,7 @@
   object-fit: cover;
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
 }
@@ -346,3 +346,87 @@ body .footer .content > div .image {
 
 /*About*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  position:relative;
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background-color: #000;
+  
+}
+.pic{
+  
+  height: 500px;
+  width:  300px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #faf8f8;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #faf8f8;
+}
+span{
+  color: #ffffff;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #faf8f8;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -7,6 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.back-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+  }
+  
 body {
     display: flex;
     justify-content: center;
