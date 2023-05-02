@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TinkEthix</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="popup-screen">
+    <div class="popup-box">
+      <i class="fas fa-times close-btn"></i>
+      <h2>Note!</h2>
+      <p>IoT Workshop Form Out </p>
+    </div>
+  </div>
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Achivements</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="Team.html">Team</a></li>
+      </ul>
+    </nav>
+    <div class="text-box">
+      <p>We Are</p>
+      <h1>Tink Ethix</h1>
+      <h4>"WHAT IS NOW PROVED</h4>
+      <h3> WAS ONCE ONLY IMAGINED"</h3>
+      <div class="row">
+        <a href="#">IoT Workshop form</a>
+        <a href="#">Submit Your Project <span>&#x27F6;</span></a>
+        <span>You Can Share multiple projects here<br>and we will choose the best one and showcase that.</span>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><img src="images/twitter1.png"></a>
+      <a href="#"><img src="images/telegram.png"></a>
+      <a href="#"><img src="images/instagram.png"></a>
+    </div>
+
+  </div>
+
+
+
+  <script type="text/javascript">
+    const popupScreen = document.querySelector(".popup-screen");
+    const popupBox = document.querySelector(".popup-box");
+    const closeBtn = document.querySelector(".close-btn");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        popupScreen.classList.add("active");
+      }, 100);
+    });
+
+    closeBtn.addEventListener("click", () => {
+      popupScreen.classList.remove("active");
+      document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+    });
+
+
+    const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+
+    if (WebsiteCookie != -1) {
+      popupScreen.style.display = "none";
+    }
+    else {
+      popupScreen.style.display = "flex";
+    }
+  </script>
+
+
+</body>
+
+</html>
