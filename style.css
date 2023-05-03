@@ -338,6 +338,9 @@ span{
 .text-box p{
     font-size: 20px;
 }
+.text-box h2{
+    font-size: 60px;
+    }
 .text-box h1{
     font-size: 80px;
     line-height: 140px;
