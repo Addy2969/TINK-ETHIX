@@ -400,14 +400,15 @@ span{
   position: fixed;
   z-index: 100;
 }
+
+
 .footer {
     display: block;
     width: 100%;
     position: relative;
-    background: #150c21;
+    background-color:black;
     padding: 150px 25px 50px 25px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+   
 }
 .footer-start {
     display: flex;
@@ -418,8 +419,8 @@ span{
     width: 90%;
     margin: auto;
     padding: 80px 100px;
-    background: #705df2;
-    border-radius: 15px;
+    background: transparent;
+    
 }
 .start-learning {
     position: absolute;
