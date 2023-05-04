@@ -403,15 +403,7 @@ span{
 }
 
 
-.content{
-    color: #fff;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
+
 .content h1{
     font-size: 120px;
     line-height: 140px;
@@ -421,23 +413,6 @@ span{
 .content p{
     line-height: 28px;
     opacity: 0;
-}
-.links{
-    margin-top: 30px;
-    opacity: 0;
-}
-.links button {
-    width: 200px;
-    padding: 15px 0;
-    margin: 0 15px;
-    text-align: center;
-    transition: 0.5s;
-    font-weight: 600;
-    position: relative;
-    background: #150c21;
-    padding: 150px 25px 50px 25px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 .footer-start {
     display: flex;
@@ -451,23 +426,7 @@ span{
     background: #705df2;
     border-radius: 15px;
 }
-.content button span{
-    background: #f66335;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-.content button:hover span{
-    width: 100%;
-}
-.content button:hover{
-    border: 0;
-}
+
 footer{
     width: 100%;
     background: linear-gradient(to right,#00093c, #2d0b00);
