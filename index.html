@@ -15,13 +15,21 @@
 
 <body>
 
-  <div class="popup-screen">
+  <div id="preloader">
+    <video autoplay loop delay muted plays-inline class="back-video">
+    
+      <source src="images/load.mp4" type="video/mp4">
+    </video> 
+  </div>
+
+
+  <!---<div class="popup-screen">
     <div class="popup-box">
       <i class="fas fa-times close-btn"></i>
       <h2>Note!</h2>
       <p>IoT Workshop Form Out </p>
     </div>
-  </div>
+  </div>--->
   <video autoplay loop delay muted plays-inline class="back-video">
     
     <source src="images/Aimages - bkvideo (2).mp4" type="video/mp4">
@@ -44,7 +52,7 @@
       <h4>"WHAT IS NOW PROVED</h4>
       <h3> WAS ONCE ONLY IMAGINED"</h3>
       <div class="row">
-        <a href="forms.gle/mZiAeLnJcSj5YeUw9">IoT Workshop form</a>
+       <!--- <a href="forms.gle/mZiAeLnJcSj5YeUw9">IoT Workshop form</a>--->
         <a href="#">Submit Your Project <span>&#x27F6;</span></a>
         <span>You Can Share multiple projects here<br>and we will choose the best one and showcase that.</span>
       </div>
@@ -56,9 +64,7 @@
       <a href="https://www.instagram.com/tink.ethix/" target="_blank"><img src="images/instagram.png"></a>
     </div>
   </div>
-
-
-
+  
   <!--About Us-->
 <section class="about-us" data-aos="fade-up">
   <div class="row" >
@@ -85,7 +91,14 @@
     </div>
 </section>
 
-
+<script>
+  var loader = document.getElementById("preloader") ;
+  window. addEventListener("load", function(){
+    loader.style.display= "none";
+    
+  })
+  </script>
+  
 
 </body>
 
