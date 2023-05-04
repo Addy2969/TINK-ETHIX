@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>TinkEthix</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" type="image/x-icon" href="/images/logo.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -59,8 +60,8 @@
 
 
   <!--About Us-->
-<section class="about-us">
-  <div class="row">
+<section class="about-us" data-aos="fade-up">
+  <div class="row" >
       <div class="column">
         <img src="images/about.jpg" alt="Snow" style="width:100%">
       </div>
@@ -118,5 +119,14 @@
       popupScreen.style.display = "flex";
     }
   </script>
+
+    <!--AUr aos data(scroll efect)-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
 
 
