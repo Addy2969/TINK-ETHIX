@@ -402,13 +402,41 @@ span{
 }
 
 
-.footer {
-    display: block;
+.content{
+    color: #fff;
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+    opacity: 0;
+}
+.content p{
+    line-height: 28px;
+    opacity: 0;
+}
+.links{
+    margin-top: 30px;
+    opacity: 0;
+}
+.links button {
+    width: 200px;
+    padding: 15px 0;
+    margin: 0 15px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
     position: relative;
-    background-color:black;
+    background: #150c21;
     padding: 150px 25px 50px 25px;
-   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .footer-start {
     display: flex;
@@ -419,142 +447,153 @@ span{
     width: 90%;
     margin: auto;
     padding: 80px 100px;
-    background: transparent;
-    
+    background: #705df2;
+    border-radius: 15px;
 }
-.start-learning {
+.content button span{
+    background: #f66335;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
     position: absolute;
     left: 0;
-    right: 0;
-    top: -150px;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
 }
-.footer .inner {
-    display: flex;
-    align-items: self-start;
-    justify-content: space-between;
-    column-gap: 20px;
-    row-gap: 20px;
-    max-width: 1180px;
-    margin: auto;
-    text-align: left;
-}
-.main-logo {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.main-logo .logo {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-.main-logo .logo > img {
-    display: block;
+.content button:hover span{
     width: 100%;
-    min-width: 40px;
 }
-.logo-info {
-    text-align: left;
+.content button:hover{
+    border: 0;
+}
+footer{
+    width: 100%;
+    background: linear-gradient(to right,#00093c, #2d0b00);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 13px;
     line-height: 20px;
 }
-.text {
-    font-size: 17px;
-    line-height: 17px;
-    color: #fff;
-    letter-spacing: .18em;
-    font-weight: 600;
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.copyright {
-    color: #fff;
-    font-size: 12px;
-    line-height: 12px;
+.col{
+    flex-basis: 25%;
+    padding: 10px;
 }
-.footer .column {
-    width: 100%;
-    font-size: 14px;
-    text-align: left;
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
 }
-.footer .column .column-title {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 0.5em;
-    color: #fff;
-}
-.footer .column .column-title:not(:first-child) {
-    margin-top: 1em;
-}
-.illustration {
-    left: 8%;
-    position: absolute;
-    top: -28px;
-}
-a.button {
-    display: inline-flex;
+.footer_logo{
+    width: 80px;
     position: relative;
-    height: 60px;
-    margin-right: 20px;
-    flex-direction: row;
+    top: -23px;
+    left: -20px;
+}
+.footer_about{
+    position: relative;
+    top: -23px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer_email{
+    width: fit-content;
+    border-bottom: 1px solid #f66335;
+    margin: 20px 0;
+}
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.col ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.col form{
+    padding-bottom: 15px;
+    display: flex;
     align-items: center;
-    overflow: hidden;
-    background: #fff;
-    color: #705df2;
-    border-radius: 36px;
+    justify-content: space-between;
+    border-bottom: 1px solid #f66335;
+    margin-bottom: 50px;
+}
+.col form .icon{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.col form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+.col form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.col form button .icon_right{
     font-size: 16px;
-    font-weight: 700;
-    padding: 0 30px;
-    text-decoration: unset;
-    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
+    color: #ccc;
 }
-.section-title {
-    font-size: 44px;
-    font-weight: 700;
+.col .social_icons .social_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
     color: #fff;
+    background: #f66335;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
 }
-.section-sub-heading {
-    font-size: 22px;
-    font-weight: 400;
-    color: #fff;
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
 }
-.section-sub-heading span {
-    opacity: 0.6;
+footer .copyright{
+    text-align: center;
 }
-.section-sub-heading strong {
-    font-weight: 600;
+.bottom_line{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
 }
-@media only screen and (max-width: 990px) and (min-width: 200px) {
-    body {
-        height: 200vh;
-        overflow-y: scroll;
-        overflow-x: hidden;
+.bottom_line span{
+    width: 15px;
+    height: 100%;
+    background: #f66335;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moveline 2s linear infinite;
+}
+@keyframes moveline{
+    0%{
+        left:-20px;
     }
-    .footer .inner {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .start-learning {
-        position: unset;
-    }
-    .footer-start {
-        width: 100%;
-        display: block;
-        padding: 30px 20px;
-        margin: 30px 0;
-    }
-    .section-title {
-        font-size: 30px;
-    }
-    .section-sub-heading {
-        font-size: 18px;
-    }
-    footer.footer {
-        padding-top: 0;
-    }
-    a.button {
-        height: 50px;
-        margin-top: 10px;
-    }
-    .column.is-logo {
-        order: 4;
+    100%{
+        left:100%;
     }
 }
