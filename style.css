@@ -263,23 +263,26 @@ section{
   
   height: 500px;
   width:  300px;
+  float: right;
 }
 .about{
   width: 1130px;
   max-width: 85%;
   margin: 0 auto;
   display: flex;
-  align-items: left;
-  justify-content: space-around;
+  float: left;
+  justify-content: left;
 }
 .text{
   width: 540px;
+  float: left;
 }
 .text h2{
   font-size: 90px;
   font-weight: 600;
   margin-bottom: 10px;
   color: #faf8f8;
+  float: left;
 
 }
 .text h5{
@@ -287,6 +290,7 @@ section{
   font-weight: 500;
   margin-bottom: 20px;
   color: #faf8f8;
+  float: left;
 }
 span{
   color: #ffffff;
