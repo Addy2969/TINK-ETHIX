@@ -268,7 +268,7 @@ section{
 .about{
   width: 1130px;
   max-width: 85%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   float: left;
   justify-content: left;
@@ -320,13 +320,13 @@ span{
 }
 
 .column {
-  float: left;
+  float:right;
   width: 33.33%;
-  padding: 5px;
+  padding: 10px;
 }
 
 .row::after {
-  content: "";
+  content:"";
   clear: both;
   display: table;
 }
