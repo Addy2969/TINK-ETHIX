@@ -269,7 +269,7 @@ section{
   max-width: 85%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-around;
 }
 .text{
@@ -351,7 +351,7 @@ span{
     height:100vh;
     width:100%;
     padding: 90px 0;
-    background-colour: #26ffe5;
+    background-color: #26ffe5;
 }
 .achi-card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -373,7 +373,7 @@ span{
     height:100vh;
     width:100%;
     padding: 90px 0;
-    background-colour: #26ffe5;
+    background-color: #26ffe5;
 }
 .achi-card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
