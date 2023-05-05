@@ -1,7 +1,3 @@
-html{
-  scroll-behavior: smooth;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -390,13 +386,4 @@ span{
     line-height: 15px;
     margin-left: 5px;
 }
-}
-
-#preloader{
-  background: #000  no-repeat center center;
-  background-size: 5%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
 }
