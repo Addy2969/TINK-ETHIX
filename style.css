@@ -282,7 +282,7 @@ section{
   font-weight: 600;
   margin-bottom: 10px;
   color: #faf8f8;
-  float: left;
+  text-align: left;
 
 }
 .text h5{
@@ -290,7 +290,7 @@ section{
   font-weight: 500;
   margin-bottom: 20px;
   color: #faf8f8;
-  float: left;
+  text-align: left;
 }
 span{
   color: #ffffff;
