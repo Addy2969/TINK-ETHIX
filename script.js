@@ -19,7 +19,7 @@ $('.carousel').owlCarousel({
             }
         }
     });
-});
+;
 
     const popupScreen = document.querySelector(".popup-screen");
     const popupBox = document.querySelector(".popup-box");
